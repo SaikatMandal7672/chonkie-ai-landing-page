@@ -11,7 +11,7 @@ export function CTASection() {
   const isInView = useInView(ref, { once: true, amount: 0.2 })
 
   return (
-    <div className="py-16 md:py-24 bg-[#d9dee0] dark:bg-neutral-900 text-neutral-900 dark:text-neutral-200 w-full">
+    <div className="py-16 px-8 md:px-16  md:py-24 bg-[#d9dee0] dark:bg-neutral-900 text-neutral-900 dark:text-neutral-200 w-full">
       <div className="container px-4 mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
  
         <div ref={ref} className="w-full md:w-1/2">

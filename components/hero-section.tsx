@@ -6,6 +6,7 @@ import { useEffect, useRef } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
+import { AuroraText } from "./magicui/aurora-text"
 
 export function HeroSection() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -84,7 +85,7 @@ export function HeroSection() {
               Make Any Document
               <br />
               <span className="text-transparent  bg-clip-text bg-gradient-to-r from-[#ae3373] to-orange-600 text-shadow">
-                AI Ready
+                <AuroraText>AI Ready</AuroraText>  
               </span>
             </motion.h1>
           </div>
