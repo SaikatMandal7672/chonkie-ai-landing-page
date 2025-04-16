@@ -45,7 +45,7 @@ export function CTASection() {
                 href="https://github.com/chonkie-inc/chonkie/tree/main/cookbook"
                 className="underline decoration-wavy"
               >
-                chunkbook
+                chonkbook
               </a>{" "}
               for examples, or contact us for a custom solution.
             </p>
