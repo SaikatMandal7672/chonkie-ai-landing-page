@@ -87,7 +87,7 @@ export function Footer() {
               href="https://x.com/SaikatM88157644"
               className="text-sm text-muted-foreground flex items-center hover:text-foreground hover-target"
             >
-            by: <FaXTwitter className="h-4 w-4 mr-2"/> Saikat Mandal</Link>
+            by: <FaXTwitter className="h-4 w-4 m-2"/> Saikat Mandal</Link>
             <Link href="/privacy" className="text-sm text-muted-foreground hover:text-foreground hover-target">
               Privacy Policy
             </Link>
