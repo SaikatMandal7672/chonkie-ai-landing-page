@@ -167,6 +167,7 @@ export function FeaturesSection() {
 }
 
 
+
 const Section1 = () => {
   return (
     <div className="sticky top-0 flex gap-x-12 items-center flex-col md:flex-row ">
