@@ -2,38 +2,15 @@
 
 import type React from "react"
 
-import { useEffect, useRef } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import { AuroraText } from "./magicui/aurora-text"
 
 export function HeroSection() {
-  const containerRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      if (!containerRef.current) return
-
-      const { left, top, width, height } = containerRef.current.getBoundingClientRect()
-      const x = (e.clientX - left) / width - 0.5
-      const y = (e.clientY - top) / height - 0.5
-
-      // Limit the movement range
-      const xOffset = x * 20
-      const yOffset = y * 20
-
-      containerRef.current.style.setProperty("--x-offset", `${xOffset}px`)
-      containerRef.current.style.setProperty("--y-offset", `${yOffset}px`)
-    }
-
-    window.addEventListener("mousemove", handleMouseMove)
-    return () => window.removeEventListener("mousemove", handleMouseMove)
-  }, [])
-
   return (
     <section
-      ref={containerRef}
+  
       className="relative min-h-screen flex items-center justify-center overflow-hidden top-0 left-0"
     >
 
@@ -71,7 +48,7 @@ export function HeroSection() {
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto"
         >
-          <div className="inline-block mb-4 px-3 border-2 py-1 rounded-ful rounded-full backdrop-blur-sm text-neutral-900 text-sm font-medium">
+          <div className="inline-block mb-4 px-3 border-2 border-orange-600 py-1 rounded-ful rounded-full backdrop-blur-sm text-neutral-900 text-sm font-medium">
             AI Document Processing Made Simple
           </div>
 
@@ -94,7 +71,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="mb-8 text-lg md:text-xl text-neutral-100 rounded-lg px-2 py-1 md:px-4 md:py-2 bg-amber-500/50 max-w-2xl mx-auto"
+            className="mb-8 text-lg md:text-xl text-black rounded-lg px-2 py-1 md:px-4 md:py-2 bg-amber-800/20 max-w-2xl mx-auto text-shadow-sm"
           >
             Chonkie parses your documents into high quality AI ingestible chunks, optimizing them for semantic
             understanding and context preservation.

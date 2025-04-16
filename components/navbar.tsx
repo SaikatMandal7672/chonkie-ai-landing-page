@@ -11,7 +11,7 @@ export function Navbar() {
 
   return (
     <div
-      className="fixed top-0  px-2 py-1 md:px-4 md:py-4 w-full text-[#896b57] z-50 transition-all duration-300  bg-[#E7E7E6]/80 dark:bg-neutral-600/70 dark:text-[#cea081] backdrop-blur-xl shadow-sm flex justify-between"
+      className="fixed top-0  px-2 py-1 md:px-4 md:py-4 w-full text-[#896b57] z-50 transition-all duration-300  bg-[#E7E7E6]/80 dark:bg-neutral-600/70 dark:text-[#eed4c3] backdrop-blur-xl shadow-sm flex justify-between"
 
     >
       <Link href="/" className="flex items-center space-x-2 hover-target">
