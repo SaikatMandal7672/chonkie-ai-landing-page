@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Github } from "lucide-react"
-
+import { FaXTwitter } from "react-icons/fa6"
 export function Footer() {
   return (
     <footer className="bg-muted-foreground text-neutral-800 dark:text-neutral-100 border-t py-12 px-8">
@@ -83,6 +83,11 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Chonkie. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0 flex space-x-6">
+            <Link
+              href="https://x.com/SaikatM88157644"
+              className="text-sm text-muted-foreground flex items-center hover:text-foreground hover-target"
+            >
+            by: <FaXTwitter className="h-4 w-4 mr-2"/> Saikat Mandal</Link>
             <Link href="/privacy" className="text-sm text-muted-foreground hover:text-foreground hover-target">
               Privacy Policy
             </Link>
