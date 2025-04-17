@@ -84,14 +84,14 @@ export function HeroSection() {
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <Link href="/demo" className="hover-target">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto rounded-lg">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto rounded-lg bg-orange-600">
                 Book a Demo
               </Button>
             </Link>
-            <Link href="/cloud" className="hover-target">
-              <Button size="lg" className="w-full sm:w-auto text-gray-900 border border-gray-900" >
+            <Link href="/cloud" className="group/button hover-target">
+              <Button size="lg" className="w-full sm:w-auto text-gray-900 border border-gray-900 group-hover/button:bg-amber-100 group-hover/button:text-gray-900">
                 Try Chonkie Cloud
-                <span className="ml-2">→</span>
+                <span className="ml-2 group-hover/button:translate-x-1 transition-transform duration-300">→</span>
               </Button>
             </Link>
           </motion.div>

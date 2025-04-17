@@ -36,15 +36,15 @@ export function Navbar() {
           </Link>
          <ModeToggle />
           
-          <Link href="/demo" className="hidden sm:block hover-target">
-            <Button className="border border-orange-600 bg-[#f35b04] text-white " size="sm">
+          <Link href="/demo" className="group/demo hidden sm:block hover-target">
+            <Button className="border border-orange-600 bg-[#f35b04] text-white group-hover/demo:bg-orange-700 group-hover/demo:text-white" size="sm">
               Book a Demo
             </Button>
           </Link>
-          <Link href="/cloud" className="hover-target">
-            <Button size="sm">
+          <Link href="/cloud" className="hover-target group/button ">
+            <Button size="sm" className="group-hover/button:bg-amber-100 group-hover/button:text-gray-900 border-amber-600 border">
               Chonkie Cloud
-              <span className="ml-1">→</span>
+              <span className="ml-1 group-hover/button:translate-x-1 transition-transform duration-300">→</span>
             </Button>
           </Link>
         </div>

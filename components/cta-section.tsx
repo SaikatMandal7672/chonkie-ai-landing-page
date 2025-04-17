@@ -29,7 +29,7 @@ export function CTASection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <Link href="/demo" className="hover-target">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto bg-zinc-200 dark:bg-zinc-800">
                   Book a Demo
                 </Button>
               </Link>
