@@ -4,23 +4,48 @@ import type React from "react"
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { motion } from "framer-motion"
+import { animate,  motion, useMotionTemplate, useMotionValue } from "framer-motion"
 import { AuroraText } from "./magicui/aurora-text"
-
+import { useEffect } from "react"
+const COLORS = [
+  "#fffffc", "#ffc6ff", "#bdb2ff", "#a0c4ff", "#9bf6ff", "#9bf6ff", "#a0c4ff", "#bdb2ff", "#ffc6ff", "#fffffc"]
+  const COLORS2 = ["#caffbf", "#fdffb6", "#ffd6a5", "#ffadad", "#4cc9f0", "#4cc9f0", "#ffadad", "#ffd6a5", "#fdffb6", "#caffbf"
+];
 export function HeroSection() {
+  const color1 = useMotionValue(COLORS[0])
+
+  const color = useMotionValue(COLORS2[0])
+  const backgroundImage = useMotionTemplate`linear-gradient( 135deg, ${color1} 0%, ${color} 100%)`
+
+  useEffect(() => {
+    animate(color, COLORS2, {
+      ease: "easeInOut",
+      duration: 15,
+      repeat: Infinity,
+      repeatType: "mirror"
+    })
+    animate(color1, COLORS, {
+      ease: "easeInOut",
+      duration: 15,
+      repeat: Infinity,
+      repeatType: "mirror"
+    })
+  }, )
   return (
-    <section
-  
-      className="relative min-h-screen flex items-center justify-center overflow-hidden top-0 left-0"
+    <motion.div
+    style={{
+      backgroundImage: backgroundImage,
+    }}
+      className="relative min-h-screen flex items-center justify-center overflow-hidden top-0 left-0 mask-b-from-75% mask-b-to-99%"
     >
 
-      <div
+      {/* <div
         className="absolute inset-0"
         style={{
           backgroundImage: "linear-gradient(135deg, #f79d65 0%, #e9ff70 60%)",
           backgroundSize: "200% 200%",
         }}
-      ></div>
+      ></div> */}
 
       <div className="absolute inset-0 opacity-40 animate-grid-lines">
         <svg width="100%" height="100%" className="dark:opacity-40">
@@ -99,6 +124,6 @@ export function HeroSection() {
 
 
       </div>
-    </section>
+    </motion.div>
   )
 }
