@@ -8,8 +8,8 @@ import { animate,  motion, useMotionTemplate, useMotionValue } from "framer-moti
 import { AuroraText } from "./magicui/aurora-text"
 import { useEffect } from "react"
 const COLORS = [
-  "#fffffc", "#ffc6ff", "#bdb2ff", "#a0c4ff", "#9bf6ff", "#9bf6ff", "#a0c4ff", "#bdb2ff", "#ffc6ff", "#fffffc"]
-  const COLORS2 = ["#caffbf", "#fdffb6", "#ffd6a5", "#ffadad", "#4cc9f0", "#4cc9f0", "#ffadad", "#ffd6a5", "#fdffb6", "#caffbf"
+  "#fffffc", "#ffc6ff", "#bdb2ff", "#a0c4ff", "#9bf6ff", "#9bf6ff", "#a0c4ff", "#bdb2ff", "#ffc6ff", "#fffffc","a5ffd6"]
+  const COLORS2 = ["#caffbf", "#fdffb6", "#ffd6a5", "#ffadad", "#4cc9f0", "#4cc9f0", "#ffadad", "#ffd6a5", "#fdffb6", "#caffbf","#ff85a1"
 ];
 export function HeroSection() {
   const color1 = useMotionValue(COLORS[0])
@@ -36,7 +36,7 @@ export function HeroSection() {
     style={{
       backgroundImage: backgroundImage,
     }}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden top-0 left-0 mask-b-from-85%"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden top-0 left-0 mask-b-from-85% dark:mask-b-from-99%"
     >
 
       {/* <div

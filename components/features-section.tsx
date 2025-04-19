@@ -120,7 +120,7 @@ export function FeaturesSection() {
 
 
         <div
-          className="my-12 relative flex flex-col gap-8 w-full bg-muted rounded-2xl px-8 py-6 md:p-12 min-h-screen bg-green-400/65 overflow-visible dark:bg-green-900/50">
+          className="my-12 relative flex flex-col gap-8 w-full bg-muted rounded-2xl px-8 py-6 md:p-12 min-h-screen bg-green-400/65 overflow-visible dark:bg-blue-950/65">
           <Section1 />
           <Section2 />
           <Section3 />
