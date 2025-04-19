@@ -36,7 +36,7 @@ export function HeroSection() {
     style={{
       backgroundImage: backgroundImage,
     }}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden top-0 left-0 mask-b-from-75% mask-b-to-99%"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden top-0 left-0 mask-b-from-85%"
     >
 
       {/* <div
