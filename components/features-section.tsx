@@ -130,7 +130,7 @@ export function FeaturesSection() {
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             className="bg-card border rounded-xl overflow-hidden shadow-lg md:w-3xl mx-auto w-80"
           >
             <div className="bg-muted/50 p-4 border-b">

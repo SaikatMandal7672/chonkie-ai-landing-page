@@ -8,8 +8,10 @@ import { animate,  motion, useMotionTemplate, useMotionValue } from "framer-moti
 import { AuroraText } from "./magicui/aurora-text"
 import { useEffect } from "react"
 const COLORS = [
-  "#fffffc", "#ffc6ff", "#bdb2ff", "#a0c4ff", "#9bf6ff", "#9bf6ff", "#a0c4ff", "#bdb2ff", "#ffc6ff", "#fffffc","a5ffd6"]
-  const COLORS2 = ["#caffbf", "#fdffb6", "#ffd6a5", "#ffadad", "#4cc9f0", "#4cc9f0", "#ffadad", "#ffd6a5", "#fdffb6", "#caffbf","#ff85a1"
+  "#fffffc", "#ffc6ff", "#bdb2ff", "#a0c4ff", "#9bf6ff", "#9bf6ff", "#a0c4ff", "#bdb2ff", "#ffc6ff", "#fffffc"
+]
+  const COLORS2 = [
+    "#caffbf", "#fdffb6", "#ffd6a5", "#ffadad", "#4cc9f0", "#4cc9f0", "#ffadad", "#ffd6a5", "#fdffb6", "#caffbf","#ff85a1"
 ];
 export function HeroSection() {
   const color1 = useMotionValue(COLORS[0])
@@ -82,7 +84,7 @@ export function HeroSection() {
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight pb-1"
+              className="text-4xl md:text-6xl lg:text-7xl font-semibold tracking-tighter pb-1"
             >
               Make Any Document
               <br />
