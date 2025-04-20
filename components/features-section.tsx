@@ -130,7 +130,7 @@ export function FeaturesSection() {
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.5 }}
             className="bg-card border rounded-xl overflow-hidden shadow-lg md:w-3xl mx-auto w-80"
           >
             <div className="bg-muted/50 p-4 border-b">
@@ -146,7 +146,7 @@ export function FeaturesSection() {
           <motion.div
             initial={{ opacity: 0, scale: 0.9, x: 40, y: 40 }}
             whileInView={{ opacity: 1, scale: 1, x: 20, y: 20 }}
-            transition={{ duration: 0.5,delay:0.75 }}
+            transition={{ duration: 0.5,delay:0.1}}
             className="relative min-h-40 bg-neutral-100 dark:bg-neutral-800 border mx-auto rounded-xl overflow-hidden shadow-lg md:w-xl w-2xs"
           >
             <div className="bg-muted/50 p-3 border-b">

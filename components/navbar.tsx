@@ -41,7 +41,7 @@ export function Navbar() {
               Book a Demo
             </Button>
           </Link>
-          <Link href="/cloud" className="hover-target group/button ">
+          <Link href="/cloud" className="hover-target group/button hidden sm:block ">
             <Button size="sm" className="group-hover/button:bg-amber-100 group-hover/button:text-gray-900 border-amber-600 border">
               Chonkie Cloud
               <span className="ml-1 group-hover/button:translate-x-1 transition-transform duration-300">→</span>
