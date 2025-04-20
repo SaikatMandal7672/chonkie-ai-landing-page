@@ -18,18 +18,19 @@ export const HoverEffect = ({
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
+
   return (
     <div
 
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 w-full py-10",
+        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 w-full md:py-10",
         className
       )}
     >
       {items.map((item, idx) => (
         <motion.div
           ref={ref}
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.15*idx }}
           key={idx}
